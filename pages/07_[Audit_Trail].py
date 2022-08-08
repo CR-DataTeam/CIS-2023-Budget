@@ -66,7 +66,7 @@ service = build('sheets', 'v4', credentials=creds, cache_discovery=False)
 
 spreadsheetId = '1-zYgl-7ffj8cV2N80aICDHHKHfqyQX5rE3HXDcgSsfc'
 
-rangeNameAudit = 'AuditLog!A:BQ'
+rangeNameAudit = 'CISAuditLog!A:BQ'
 result = service.spreadsheets().values().get(
     spreadsheetId=spreadsheetId, range=rangeNameAudit).execute()
 #values = result.get('values', [])
@@ -98,7 +98,7 @@ def fetchData():
     service = build('sheets', 'v4', credentials=creds, cache_discovery=False)
     
     spreadsheetId = '1-zYgl-7ffj8cV2N80aICDHHKHfqyQX5rE3HXDcgSsfc'
-    rangeName = 'AuditLog!A:BQ'
+    rangeName = 'CISAuditLog!A:BQ'
     result = service.spreadsheets().values().get(
         spreadsheetId=spreadsheetId, range=rangeName).execute()
     #values = result.get('values', [])
