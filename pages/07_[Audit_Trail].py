@@ -152,7 +152,8 @@ def displayTable(df: pd.DataFrame) -> AgGrid:
     "columnDefs": [
         {'field': 'unid', 'hide': True,'editable':False,'sort':'asc'},
         {'field': 'FacilityName', 'hide': True,'editable':False,},
-        {'field': 'ExamCategory', 'width':125, 'pinned':'left','editable':False, 'suppressSizeToFit':True},
+        {'field': 'ExamCategory', 'hide': True,'editable':False,},
+        #{'field': 'ExamCategory', 'width':125, 'pinned':'left','editable':False, 'suppressSizeToFit':True},
         {'field': 'ExamType', 'width':175, 'pinned':'left','editable':False, 'suppressSizeToFit':True},
         {'field': 'SortInt', 'hide': True,'editable':False,},
         {'field': 'AuditUser', 'hide': True,'editable':False,},
