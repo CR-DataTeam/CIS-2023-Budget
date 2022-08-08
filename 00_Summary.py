@@ -82,7 +82,7 @@ def fetchData():
     service = build('sheets', 'v4', credentials=creds, cache_discovery=False)
     
     spreadsheetId = '1-zYgl-7ffj8cV2N80aICDHHKHfqyQX5rE3HXDcgSsfc'
-    rangeName = 'CurrentFacilityValues!A1:BN321'
+    rangeName = 'CISCurrentFacilityValues!A1:BN321'
     result = service.spreadsheets().values().get(
         spreadsheetId=spreadsheetId, range=rangeName).execute()
     #values = result.get('values', [])
@@ -136,7 +136,8 @@ def displayTable(df: pd.DataFrame) -> AgGrid:
     "columnDefs": [
         {'field': 'unid', 'hide': True,'editable':False,'sort':'asc'},
         {'field': 'FacilityName', 'hide': True,'editable':False,},
-        {'field': 'ExamCategory', 'width':125, 'pinned':'left','editable':False, 'suppressSizeToFit':True},
+        {'field': 'ExamCategory', 'hide': True,'editable':False,},
+        #{'field': 'ExamCategory', 'width':125, 'pinned':'left','editable':False, 'suppressSizeToFit':True},
         {'field': 'ExamType', 'width':175, 'pinned':'left','editable':False, 'suppressSizeToFit':True},
         {'field': 'SortInt', 'hide': True,'editable':False,},
         {'field': 'AuditUser', 'hide': True,'editable':False,},
