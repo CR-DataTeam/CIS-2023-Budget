@@ -116,7 +116,7 @@ def fetchData():
     
     dfall = dfpiv
     dfit = ledger[f'{FACNAME}_dfload']
-    return dfit,dfall
+    return dfit, dfall
 
 dfall = fetchData()[1]
 dfit = fetchData()[0]    
@@ -375,13 +375,12 @@ else { return (100*((
 
 
 grid_response = displayTable(dfit)
+outputdf = {}
 
 del dfall['unid']
 del dfall['SortInt']
 del dfall['HistoricalVolumeFlag']
-
-
-#     naming = facilityList[i].replace(' ','')
+del dfall['ExamCategory']
 
 #import xlsxwriter
 from io import BytesIO
