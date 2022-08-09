@@ -36,11 +36,8 @@ js = JsCode(sc.getCodeSnippet('jsCodeStr'))
 #### set-up basis for iteration
 ###############################################################################
 
-XLfacilityList = ['Ballantyne', 'Blakeney', 'Huntersville', 'Matthews', 'MCP', 
-                'MMP', 'Mobile', 'Monroe', 'Mooresville', 'Pineville', 
-                'Prosperity', 'Randolph', 'Rock Hill', 'Rosedale', 'Southpark', 
-                'Steele Creek', 'Union West', 'University', 'xDeNovo'
-]
+XLfacilityList = ['Ballantyne', 'Denver', 'Huntersville', 'Matthews',
+                  'Rock Hill', 'Southpark']
 
 colSortList = [
       'Jan19', 'Feb19', 'Mar19', 'Apr19', 'May19', 'Jun19', 'Jul19', 'Aug19', 'Sep19', 'Oct19', 'Nov19', 'Dec19',
