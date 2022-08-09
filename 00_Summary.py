@@ -382,9 +382,6 @@ grid_response = displayTable(dfit)
 del dfall['unid']
 del dfall['SortInt']
 del dfall['HistoricalVolumeFlag']
-dlBallantyne = dfall[dfall['FacilityName']=='Ballantyne']
-dlBlakeney = dfall[dfall['FacilityName']=='Blakeney']
-
 
 
 #     naming = facilityList[i].replace(' ','')
