@@ -9,8 +9,6 @@ from googleapiclient.discovery import build
 import strConstants as sc
 
 FACNAME = 'Summary'
-FACBEG  =  35
-FACEND  = 42
 
 st.set_page_config(
      page_title="CIS 2023 Budget",
@@ -99,16 +97,7 @@ def fetchData():
     ledger = {}
     
     ledger[f'{FACNAME}_dfload'] = dfpiv[dfpiv['FacilityName']==FACNAME]
-    ledger[f'{FACNAME}_startrow'] = FACBEG
-    ledger[f'{FACNAME}_endrow'] = FACEND
     
-    
-    # for i in range(len(facilityList)):
-    #     ledger[f'{facilityList[i]}_dfload'] = dfpiv[dfpiv['FacilityName']==facilityList[i]]
-    #     ledger[f'{facilityList[i]}_startRow'] =  2 + i*16
-    #     ledger[f'{facilityList[i]}_endRow']   = 17 + i*16   
-    #     naming = facilityList[i].replace(' ','')
-            
     
     ###############################################################################
     #### tbd
