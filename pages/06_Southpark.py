@@ -1,4 +1,4 @@
 
-import MammFunctions as mf
+import CISFunctions as cf
 
-mf.generatePage('Southpark', 30,35)
+cf.generatePage('Southpark', 30,35)

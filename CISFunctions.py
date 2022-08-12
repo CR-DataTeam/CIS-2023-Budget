@@ -3,7 +3,8 @@ def generatePage(facility_name, facility_startrow, facility_endrow):
     import pandas as pd
     import streamlit as st
     from st_aggrid import GridOptionsBuilder, AgGrid, GridUpdateMode, DataReturnMode, JsCode
-    import datetime
+    from datetime import datetime, timezone
+    import zoneinfo 
     from google.oauth2 import service_account
     from googleapiclient.discovery import build
     import strConstants as sc
@@ -124,7 +125,7 @@ def generatePage(facility_name, facility_startrow, facility_endrow):
     #### Logic for when the Submission Button is pressed!
     if submissionButton:
         if len(auditUser) >0:
-            auditTime = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            auditTime = datetime.now().replace(tzinfo=zoneinfo.ZoneInfo('US/Eastern')).strftime('%Y-%m-%d %H:%M:%S')
             dfgo['AuditUser'] = str(auditUser)
             dfgo['AuditDateTime'] = str(auditTime)
             goog = dfgo.values.tolist()

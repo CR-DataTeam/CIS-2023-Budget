@@ -1,4 +1,4 @@
 
-import MammFunctions as mf
+import CISFunctions as cf
 
-mf.generatePage('Denver', 7, 13)
+cf.generatePage('Denver', 7, 13)
