@@ -115,9 +115,12 @@ def generatePage(facility_name, facility_startrow, facility_endrow):
     with col1:
         latestAuditUserText = 'Latest Audit User:    ' + str(latestAuditUser) #ALT+0160
         latestAuditDateText = 'Latest Audit Date:    ' + str(latestAuditDate)
-        st.markdown('Jan19-Aug22: Actuals --- Sep22-Dec22: Forecast --- Jan23-Dec23: Budget')
         st.markdown(f'{latestAuditUserText}')
         st.markdown(f'{latestAuditDateText}')
+    with col2:
+        st.markdown('Jan19-Aug22: Actuals')
+        st.markdown('Sep22-Dec22: Forecast')
+        st.markdown('Jan23-Dec23: Budget')
     with col3:
         auditUser = st.text_input('Enter name: (required)', value='',)
     with col4:
