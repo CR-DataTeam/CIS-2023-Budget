@@ -77,7 +77,7 @@ def fetchData():
     service = build('sheets', 'v4', credentials=creds, cache_discovery=False)
     
     spreadsheetId = '1-zYgl-7ffj8cV2N80aICDHHKHfqyQX5rE3HXDcgSsfc'
-    rangeName = 'CISCurrentFacilityValues!A1:BQ43'
+    rangeName = 'CISCurrentFacilityValues!A1:BQ44'
     result = service.spreadsheets().values().get(
         spreadsheetId=spreadsheetId, range=rangeName).execute()
     #values = result.get('values', [])
