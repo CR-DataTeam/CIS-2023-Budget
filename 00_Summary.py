@@ -402,10 +402,10 @@ with col1:
         file_name="CIS2023Budget_export.xlsx",
         mime="application/vnd.ms-excel"
     )
-with col2:
-    st.markdown('Jan19-Aug22: Actuals')
-    st.markdown('Sep22-Dec22: Forecast')
-    st.markdown('Jan23-Dec23: Budget')
+#with col2:
+#    st.markdown('Jan19-Aug22: Actuals')
+#    st.markdown('Sep22-Dec22: Forecast')
+#    st.markdown('Jan23-Dec23: Budget')
     
 
 
