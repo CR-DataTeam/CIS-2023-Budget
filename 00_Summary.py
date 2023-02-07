@@ -56,8 +56,8 @@ for colm in range(len(col19)):
     gr19[col19[colm]] = '2019'
 
 
-editableMonths = colSortList[48:60]
-lockedMonths = colSortList[0:48]
+editableMonths = colSortList[49:60]
+lockedMonths = colSortList[0:49]
 
 facilityList=[FACNAME]
 
@@ -199,7 +199,7 @@ def displayTable(df: pd.DataFrame) -> AgGrid:
         
         {   'headerName': '2022',
              'field': 'group2022',
-             'openByDefault':True,
+             'openByDefault':False,
              'children': [
                  {'field': 'Jan22', 'columnGroupShow':'open', 'editable':False, 'resizable':False, 'suppressSizeToFit':True, 'suppressAutoSize':True, 'filter':False, 'width':75, 'cellStyle':{'background-color':'lightblue'}},
                  {'field': 'Feb22', 'columnGroupShow':'open', 'editable':False, 'resizable':False, 'suppressSizeToFit':True, 'suppressAutoSize':True, 'filter':False, 'width':75, 'cellStyle':{'background-color':'lightblue'}},
@@ -223,7 +223,7 @@ def displayTable(df: pd.DataFrame) -> AgGrid:
              'field': 'group2023',
              'openByDefault':True,
              'children': [
-                 {'field': 'Jan23', 'columnGroupShow':'open', 'editable':False, 'resizable':False, 'suppressSizeToFit':True, 'suppressAutoSize':True, 'filter':False, 'width':75},
+                 {'field': 'Jan23', 'columnGroupShow':'open', 'editable':False, 'resizable':False, 'suppressSizeToFit':True, 'suppressAutoSize':True, 'filter':False, 'width':75, 'cellStyle':{'background-color':'lightblue'}},
                  {'field': 'Feb23', 'columnGroupShow':'open', 'editable':False, 'resizable':False, 'suppressSizeToFit':True, 'suppressAutoSize':True, 'filter':False, 'width':75},
                  {'field': 'Mar23', 'columnGroupShow':'open', 'editable':False, 'resizable':False, 'suppressSizeToFit':True, 'suppressAutoSize':True, 'filter':False, 'width':75},
                  {'field': 'Apr23', 'columnGroupShow':'open', 'editable':False, 'resizable':False, 'suppressSizeToFit':True, 'suppressAutoSize':True, 'filter':False, 'width':75},
