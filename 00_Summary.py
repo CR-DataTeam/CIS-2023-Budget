@@ -56,8 +56,8 @@ for colm in range(len(col19)):
     gr19[col19[colm]] = '2019'
 
 
-editableMonths = colSortList[49:60]
-lockedMonths = colSortList[0:49]
+editableMonths = colSortList[51:60]
+lockedMonths = colSortList[0:51]
 
 facilityList=[FACNAME]
 
@@ -224,8 +224,8 @@ def displayTable(df: pd.DataFrame) -> AgGrid:
              'openByDefault':True,
              'children': [
                  {'field': 'Jan23', 'columnGroupShow':'open', 'editable':False, 'resizable':False, 'suppressSizeToFit':True, 'suppressAutoSize':True, 'filter':False, 'width':75, 'cellStyle':{'background-color':'lightblue'}},
-                 {'field': 'Feb23', 'columnGroupShow':'open', 'editable':False, 'resizable':False, 'suppressSizeToFit':True, 'suppressAutoSize':True, 'filter':False, 'width':75},
-                 {'field': 'Mar23', 'columnGroupShow':'open', 'editable':False, 'resizable':False, 'suppressSizeToFit':True, 'suppressAutoSize':True, 'filter':False, 'width':75},
+                 {'field': 'Feb23', 'columnGroupShow':'open', 'editable':False, 'resizable':False, 'suppressSizeToFit':True, 'suppressAutoSize':True, 'filter':False, 'width':75, 'cellStyle':{'background-color':'lightblue'}},
+                 {'field': 'Mar23', 'columnGroupShow':'open', 'editable':False, 'resizable':False, 'suppressSizeToFit':True, 'suppressAutoSize':True, 'filter':False, 'width':75, 'cellStyle':{'background-color':'lightblue'}},
                  {'field': 'Apr23', 'columnGroupShow':'open', 'editable':False, 'resizable':False, 'suppressSizeToFit':True, 'suppressAutoSize':True, 'filter':False, 'width':75},
                  {'field': 'May23', 'columnGroupShow':'open', 'editable':False, 'resizable':False, 'suppressSizeToFit':True, 'suppressAutoSize':True, 'filter':False, 'width':75},
                  {'field': 'Jun23', 'columnGroupShow':'open', 'editable':False, 'resizable':False, 'suppressSizeToFit':True, 'suppressAutoSize':True, 'filter':False, 'width':75},
@@ -402,10 +402,12 @@ with col1:
         file_name="CIS2023Budget_export.xlsx",
         mime="application/vnd.ms-excel"
     )
-#with col2:
-#    st.markdown('Jan19-Aug22: Actuals')
-#    st.markdown('Sep22-Dec22: Forecast')
-#    st.markdown('Jan23-Dec23: Budget')
+
+with col2:
+    st.markdown("2+10 Forecast has been added.")
+    st.markdown("March 2023 actuals have been updated.")
+    link = '[Folder with Forecast Exports](https://usradiology-my.sharepoint.com/:f:/p/joshua_mcdonald/EjnD5sTCIrVNvbWjpUcf5fABNGzWwyNMcnYThAm4fuyE3Q?e=5UgdaM'
+    st.markdown(link, unsafe_allow_html=True)    
     
 
 
