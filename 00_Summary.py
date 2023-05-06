@@ -56,8 +56,8 @@ for colm in range(len(col19)):
     gr19[col19[colm]] = '2019'
 
 
-editableMonths = colSortList[51:60]
-lockedMonths = colSortList[0:51]
+editableMonths = colSortList[52:60]
+lockedMonths = colSortList[0:52]
 
 facilityList=[FACNAME]
 
@@ -404,9 +404,9 @@ with col1:
     )
 
 with col2:
-    st.markdown("3+9 Forecast has been added.")
-    st.markdown("March 2023 actuals have been updated.")
-    link = '[Folder with Forecast Exports](https://usradiology-my.sharepoint.com/:f:/p/joshua_mcdonald/EjnD5sTCIrVNvbWjpUcf5fABNGzWwyNMcnYThAm4fuyE3Q)'
+    st.markdown("Latest Forecast Available: 3+9 Forecast.")
+    st.markdown("Latest Actuals Updated: through April 2023.")
+    link = '[Folder with Forecast Exports, and the Original Budget](https://usradiology-my.sharepoint.com/:f:/p/joshua_mcdonald/EjnD5sTCIrVNvbWjpUcf5fABNGzWwyNMcnYThAm4fuyE3Q)'
     st.markdown(link, unsafe_allow_html=True)    
     
 
