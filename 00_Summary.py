@@ -390,7 +390,7 @@ def convert_df():
                                                                  index=False)
         # dlBallantyne.to_excel(writer, sheet_name='Ballantyne', index=False)
         # dlBlakeney.to_excel(writer, sheet_name='Blakeney', index=False)
-    writer.save()
+    writer.close()
     return output.getvalue() 
 
 #### Populating the various bottom sections
