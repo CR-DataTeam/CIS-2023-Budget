@@ -355,8 +355,8 @@ else { return (100*((
         data_return_mode=DataReturnMode.AS_INPUT,
         update_mode=GridUpdateMode.VALUE_CHANGED|GridUpdateMode.FILTERING_CHANGED,
         fit_columns_on_grid_load=True,
-        theme='light', 
-        height=525, 
+        theme='streamlit', 
+        height=555, 
         allow_unsafe_jscode=True,
         enable_enterprise_modules=True,
         key=f'aggrid_{naming}_key',
@@ -402,9 +402,11 @@ with col1:
         file_name="CIS2023Budget_export.xlsx",
         mime="application/vnd.ms-excel"
     )
+    st.markdown("")
+    st.markdown("There's currently a bug in the underlying hosting company's software that the developers are working to resolve. To see the table, please minimize/unminimize the sidebar (by clicking the [X]).")
 
 with col2:
-    st.markdown("Latest Forecast Available: 3+9 Forecast.")
+    st.markdown("Latest Forecast Available: 4+8 Forecast.*")
     st.markdown("Latest Actuals Updated: through April 2023.")
     link = '[Folder with Forecast Exports, and the Original Budget](https://usradiology-my.sharepoint.com/:f:/p/joshua_mcdonald/EjnD5sTCIrVNvbWjpUcf5fABNGzWwyNMcnYThAm4fuyE3Q)'
     st.markdown(link, unsafe_allow_html=True)    
