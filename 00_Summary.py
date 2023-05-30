@@ -402,8 +402,8 @@ with col1:
         file_name="CIS2023Budget_export.xlsx",
         mime="application/vnd.ms-excel"
     )
-    st.markdown("")
-    st.markdown("There's currently a bug in the underlying hosting company's software that the developers are working to resolve. To see the table, please minimize/unminimize the sidebar (by clicking the [X]).")
+#    st.markdown("")
+#    st.markdown("There's currently a bug in the underlying hosting company's software that the developers are working to resolve. To see the table, please minimize/unminimize the sidebar (by clicking the [X]).")
 
 with col2:
     st.markdown("Latest Forecast Available: 4+8 Forecast.*")
