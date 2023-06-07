@@ -3,3 +3,5 @@ base="dark"
 backgroundColor="#000000"
 secondaryBackgroundColor="#1c1c23"
 
+[server]
+port = 80
