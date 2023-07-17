@@ -14,7 +14,7 @@ st.set_page_config(
      page_title="CIS 2023 Budget",
      layout="wide"
      )
-padding = 0
+padding = 1
 st.markdown(f""" <style>
     .reportview-container .main .block-container{{
         padding-top: {padding}rem;
